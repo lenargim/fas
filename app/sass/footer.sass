@@ -1,0 +1,46 @@
+.footer
+  background: $greenLight
+  padding: 60px 0
+  svg
+    width: 24px
+    height: 24px
+    flex-shrink: 0
+  &__wrap
+    display: grid
+    grid-template-columns: 1fr 1fr
+    border-radius: 24px
+    overflow: hidden
+  &__info
+    display: flex
+    flex-direction: column
+    gap: 45px
+    padding: 30px
+    background: #fff
+    justify-content: flex-start
+    align-items: flex-start
+  &__row
+    display: flex
+    align-items: flex-start
+    justify-content: flex-start
+    gap: 12px
+    a, address
+      color: rgba(35, 35, 35, 0.7)
+      font-size: 14px
+      max-width: 460px
+    &:not(:last-of-type)
+      margin-bottom: 31px
+  &__phones
+    display: grid
+    grid-template-columns: 1fr 1fr
+    grid-gap: 48px 44px
+  &__phone
+    display: flex
+    align-items: flex-start
+    justify-content: flex-start
+    gap: 12px
+    &-title
+      font-size: 13px
+      color: $green
+    a
+      font: 700 22px/1.5 $manrope
+      color: $black

@@ -1,0 +1,31 @@
+.slider
+  .pagination
+    display: flex
+    align-items: center
+    justify-content: center
+    position: unset
+    margin-top: 30px
+    gap: 4px
+    .bullet
+      width: 8px
+      height: 8px
+      border-radius: 4px
+      background: $green
+      opacity: .1
+      transition: all 0.3s ease
+      &-active
+        width: 50px
+        opacity: 1
+  .swiper-slide
+    transition: all 0.4s ease
+    transform: scale(0.7)
+    opacity: 0
+    &-active, &-next
+      transform: scale(1)
+      opacity: 1
+    &-prev
+      transform-origin: right center
+      opacity: 1
+    &-next + .swiper-slide
+      opacity: 1
+      transform-origin: left center

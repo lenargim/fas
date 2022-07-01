@@ -1,0 +1,49 @@
+.logo
+  display: flex
+  align-items: center
+  justify-content: flex-start
+  gap: 15px
+  text-decoration: none
+  &__svg
+    width: 54px
+    height: 54px
+    flex-shrink: 0
+  &__text
+    font: 400 15px/1.5 $pt
+    color: $green
+
+.header
+  border-bottom: 1px solid rgba(0, 0, 0, 0.04)
+  &__wrap
+    padding: 15px 0
+    display: flex
+    align-items: center
+    justify-content: flex-end
+    gap: 40px
+  &__nav
+    margin-left: auto
+    display: flex
+    align-items: center
+    justify-content: flex-end
+    gap: 30px
+    &-li
+      position: relative
+      &.active
+        a
+          color: $green
+        &:after
+          content: ''
+          position: absolute
+          left: 0
+          right: 0
+          top: calc(1em * 1.5 + 30px)
+          height: 1px
+          background: $green
+    &-link
+      display: inline-block
+      font: 400 13px/1.5 $manrope
+      color: $black
+  &__button
+    width: 150px
+    height: 40px
+    font: 400 13px/1.5 $manrope
