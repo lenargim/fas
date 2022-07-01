@@ -206,8 +206,8 @@
           <input class="input" type="text" placeholder="Имя" name="name">
         </div>
         <div class="input-wrap">
-          <input class="input" type="text" placeholder="Номер" name="tel">
-          <input type="submit" value="Отправить" class="button-green callback__button">
+          <input class="input tel" type="text" placeholder="Номер" name="tel">
+          <input type="submit" disabled value="Отправить" class="button-green callback__button">
         </div>
       </form>
     </section>

@@ -29,6 +29,7 @@ gulp.task('styles', function () {
 gulp.task('scripts', function() {
 	return gulp.src([
 		'app/js/scripts.js',
+		'app/libs/**/*.js',
 	])
 		.pipe(concat('scripts.min.js'))
 		.pipe(uglify())

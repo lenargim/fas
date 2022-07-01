@@ -1,4 +1,27 @@
 $(document).ready(function () {
+  $('.tel').mask('+7(Z00)000-00-00', {translation: {'Z': {pattern: /[0-79]/}}});  // length === 16
+
+
+  const form = $('.callback__form');
+
+  form.find('input').on('input change', function () {
+    form.find('input[name=name]').val().length >= 2 && form.find('input[name=tel]').val().length === 16
+      ? form.find('.callback__button').prop( "disabled", false )
+      : form.find('.callback__button').prop( "disabled", true )
+  });
+
+  $('.callback__button').on('click', function (e) {
+    e.preventDefault();
+    form[0].reset();
+    $('.overlay').addClass('active');
+    $('.modal').addClass('active');
+  })
+
+  $('.modal__close').on('click', function () {
+    $('.overlay').removeClass('active');
+    $('.modal').removeClass('active');
+  })
+
   const mainSlider = new Swiper('.main__slider', {
     spaceBetween: 30,
     loop: true,
@@ -46,6 +69,7 @@ $(document).ready(function () {
       }
     }
   });
+
 
   $(window).on('scroll', function (event) {
     let block = $('.side');
