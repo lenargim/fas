@@ -70,6 +70,21 @@ $(document).ready(function () {
     }
   });
 
+  const detailerSlider = new Swiper('.detailed__slider', {
+    slidesPerView: 1,
+    loop: true,
+    preloadImages: false,
+    lazy: true,
+    effect: 'fade',
+    fadeEffect: {
+      crossFade: true
+    },
+    navigation: {
+      nextEl: '.next',
+      prevEl: '.prev',
+    },
+  });
+
 
   $(window).on('scroll', function (event) {
     let block = $('.side');
