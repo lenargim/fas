@@ -85,6 +85,49 @@ $(document).ready(function () {
     },
   });
 
+  const aboutSlider = new Swiper('.about__slider',  {
+    spaceBetween: 30,
+    loop: true,
+    watchSlidesProgress: true,
+    slideVisibleClass: 'visible',
+    pagination: {
+      el: '.pagination',
+      clickable: true,
+      currentClass: 'active',
+      bulletClass: 'bullet',
+      bulletActiveClass: 'bullet-active',
+    },
+    breakpoints: {
+      320: {
+        slidesPerView: 1,
+      },
+      1280: {
+        slidesPerView: 2,
+      }
+    }
+  })
+  const coopSlider = new Swiper('.cooperation__slider',  {
+    spaceBetween: 30,
+    loop: true,
+    watchSlidesProgress: true,
+    slideVisibleClass: 'visible',
+    pagination: {
+      el: '.pagination',
+      clickable: true,
+      currentClass: 'active',
+      bulletClass: 'bullet',
+      bulletActiveClass: 'bullet-active',
+    },
+    breakpoints: {
+      320: {
+        slidesPerView: 1,
+      },
+      1280: {
+        slidesPerView: 2,
+      }
+    }
+  })
+
 
   $(window).on('scroll', function (event) {
     let block = $('.side');

@@ -6,29 +6,37 @@
       Федеральной антимонопольной службы России и практикующих экспертов</h1>
     <div class="main__slider slider">
       <div class="swiper-wrapper">
-        <div class="swiper-slide main__slider-item">
-          <img src="img/slider1.png" alt="5 базовых профилей">
+        <div class="swiper-slide main__slider-item green">
+          <div class="main__slider-image">
+            <img src="img/slider1.png" alt="5 базовых профилей">
+          </div>
           <div class="main__slider-info">
             <h3>5 базовых профилей</h3>
             <a href="#" class="main__slider-button">Подробнее</a>
           </div>
         </div>
-        <div class="swiper-slide main__slider-item">
-          <img src="img/slider1.png" alt="5 базовых профилей">
+        <div class="swiper-slide main__slider-item gold">
+          <div class="main__slider-image">
+            <img src="img/slider1.png" alt="5 базовых профилей">
+          </div>
           <div class="main__slider-info">
             <h3>5 базовых профилей</h3>
             <a href="#" class="main__slider-button">Подробнее</a>
           </div>
         </div>
-        <div class="swiper-slide main__slider-item">
-          <img src="img/slider1.png" alt="5 базовых профилей">
+        <div class="swiper-slide main__slider-item blue">
+          <div class="main__slider-image">
+            <img src="img/slider1.png" alt="5 базовых профилей">
+          </div>
           <div class="main__slider-info">
             <h3>5 базовых профилей</h3>
             <a href="#" class="main__slider-button">Подробнее</a>
           </div>
         </div>
-        <div class="swiper-slide main__slider-item">
-          <img src="img/slider1.png" alt="5 базовых профилей">
+        <div class="swiper-slide main__slider-item blueLight">
+          <div class="main__slider-image">
+            <img src="img/slider1.png" alt="5 базовых профилей">
+          </div>
           <div class="main__slider-info">
             <h3>5 базовых профилей</h3>
             <a href="#" class="main__slider-button">Подробнее</a>

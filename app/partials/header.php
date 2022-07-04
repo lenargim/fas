@@ -36,8 +36,8 @@
         <li class="header__nav-li"><a class="header__nav-link" href="#">Академотель</a></li>
         <li class="header__nav-li"><a class="header__nav-link" href="rent.php">Аренда залов</a></li>
         <li class="header__nav-li"><a class="header__nav-link" href="#">Книжный магазин</a></li>
-        <li class="header__nav-li"><a class="header__nav-link" href="#">О центре</a></li>
-        <li class="header__nav-li"><a class="header__nav-link" href="#">Контакты</a></li>
+        <li class="header__nav-li"><a class="header__nav-link" href="about.php">О центре</a></li>
+        <li class="header__nav-li"><a class="header__nav-link" href="contacts.php">Контакты</a></li>
       </nav>
       <a href="#" class="header__button button">Личный кабинет</a>
     </div>

@@ -2,18 +2,41 @@
   &__slider
     margin-top: 70px
     &-item
-      background: #018A92
       border-radius: 24px
       overflow: hidden
+      position: relative
+      &.green
+        background: $green
+      &.gold
+        background: $gold
+      &.blue
+        background: #4986CC
+      &.blueLight
+        background: #67C3C3
+    &-image
+      position: relative
+      z-index: 1
+      padding: 46px 0 24px
+      &::before
+        content: ''
+        position: absolute
+        left: 0
+        right: 0
+        top: 0
+        bottom: 0
+        background: rgba(255, 255, 255, 0.2)
       img
+        position: relative
         width: 208px
         height: 180px
         display: block
-        margin: 46px auto 24px
+        margin: 0 auto
     &-info
-      background: $green
       padding: 20px 30px
       color: #fff
+      position: relative
+      z-index: 1
+
       h3
         height: 3.27em
         display: flex

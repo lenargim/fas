@@ -1,0 +1,105 @@
+.about
+  &__desc
+    text-align: center
+    color: rgba(35, 35, 35, 0.7)
+    margin-bottom: 20px
+  &__slider
+    margin-top: 50px
+    &-item
+      position: relative
+      overflow: hidden
+      border-radius: 24px
+      &.visible
+        .about__slider-link
+          bottom: 20px
+          opacity: 1
+    &-link
+      position: absolute
+      padding: 8px 20px
+      border-radius: 23px
+      right: 20px
+      bottom: 0
+      opacity: 0
+      transition: all 0.3s ease
+.projects
+  &__wrap
+    display: grid
+    grid-template-columns: repeat(2, 1fr)
+    gap: 30px
+  &__block
+    background: #fff
+    padding: 32px 32px 93px
+    position: relative
+    box-shadow: 0 10px 30px rgba(41, 41, 42, 0.04)
+    border-radius: 24px
+
+    h3
+      margin-bottom: 12px
+    p
+      color: rgba(35, 35, 35, 0.7)
+  &__link
+    position: absolute
+    left: 32px
+    bottom: 32px
+    background: $gold
+    color: #ffffff
+    font-size: 14px
+    border-radius: 23px
+    padding: 8px 20px
+    transition: all 0.3s ease
+    &:hover
+      background: $green
+.cooperation
+  padding: 60px 0 80px
+  background: $greenLight
+  &__wrap
+    display: grid
+    grid-template-columns: 1fr 1fr
+    grid-gap: 30px
+  &__box
+    background: #fff
+    padding: 30px
+    color: rgba(35, 35, 35, 0.7)
+    border-radius: 24px
+  &__slider
+    margin-top: 40px
+    &-item
+      border-radius: 24px
+  &__extra
+    margin-top: 40px
+    &-wrap
+      display: grid
+      grid-template-columns: repeat(3, 1fr)
+      margin-top: 24px
+      grid-gap: 30px
+    &-block
+      background: #fff
+      padding: 30px
+      color: rgba(35, 35, 35, 0.7)
+      border-radius: 24px
+.external
+  &__list
+    background: $green
+    border-radius: 24px
+    padding: 30px 32px
+  &__li
+    &:not(:last-of-type)
+      padding-bottom: 23px
+      border-bottom: 1px solid rgba(255, 255, 255, 0.2)
+      margin-bottom: 24px
+  &__link
+    font: 700 22px/1.5 $manrope
+    color: #fff
+    display: flex
+    align-items: center
+    justify-content: space-between
+    gap: 30px
+    transition: opacity 0.3s ease
+    &:hover, &:focus, &:visited
+      opacity: 0.8
+    &::after
+      content: ''
+      width: 28px
+      height: 28px
+      display: flex
+      background: url("../img/about/arrow.svg") center/contain no-repeat
