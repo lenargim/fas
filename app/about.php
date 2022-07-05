@@ -80,7 +80,7 @@
     <div class="container">
       <nav class="external__list">
         <li class="external__li"><a href="#" class="external__link">Основные сведения</a></li>
-        <li class="external__li"><a href="#" class="external__link">Структура и органы управленияобразовательной
+        <li class="external__li"><a href="#" class="external__link">Структура и органы управления образовательной
             организацией</a></li>
         <li class="external__li"><a href="#" class="external__link">Документы</a></li>
         <li class="external__li"><a href="#" class="external__link">Образование</a></li>

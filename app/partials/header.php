@@ -40,6 +40,9 @@
         <li class="header__nav-li"><a class="header__nav-link" href="contacts.php">Контакты</a></li>
       </nav>
       <a href="#" class="header__button button">Личный кабинет</a>
+      <div class="burger">
+        <span></span>
+      </div>
     </div>
   </div>
 </header>

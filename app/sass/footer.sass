@@ -14,6 +14,8 @@
     grid-template-rows: 572px
     border-radius: 24px
     overflow: hidden
+    @include max(1023)
+      grid-template-columns: 1fr
   &__info
     display: flex
     flex-direction: column
@@ -21,8 +23,12 @@
     background: #fff
     justify-content: flex-start
     align-items: flex-start
+    @include between(1024, 1280)
+      padding: 20px
   &__rows
     margin-top: 45px
+    @include between(1024, 1280)
+      margin-top: 30px
   &__row
     display: flex
     align-items: flex-start
@@ -34,11 +40,19 @@
       max-width: 460px
     &:not(:last-of-type)
       margin-bottom: 31px
+      @include between(1024, 1280)
+        margin-bottom: 20px
   &__phones
     display: grid
     grid-template-columns: 1fr 1fr
     grid-gap: 48px 44px
     margin-top: auto
+    @include between(1024, 1280)
+      grid-template-columns: 1fr
+      grid-gap: 30px
+    @include max(767)
+      grid-template-columns: 1fr
+      grid-gap: 20px
   &__phone
     display: flex
     align-items: flex-start
@@ -50,3 +64,6 @@
     a
       font: 700 22px/1.5 $manrope
       color: $black
+  #map
+    @include max(1023)
+    min-height: 500px

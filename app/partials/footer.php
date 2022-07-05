@@ -75,11 +75,11 @@
       </script>
       <div id="map">
         <iframe
-            id="ymaps_lazy"
-            data-src="https://yandex.ru/map-widget/v1/?um=constructor%3A516129fdb77800fea95cf0e628781dcc26a022b33b94d71ff0346ebcf3730c01&amp;source=constructor"
-            width="100%"
-            height="100%"
-            frameborder="0">
+                id="ymaps_lazy"
+                data-src="https://yandex.ru/map-widget/v1/?um=constructor%3A516129fdb77800fea95cf0e628781dcc26a022b33b94d71ff0346ebcf3730c01&amp;source=constructor"
+                width="100%"
+                height="100%"
+                frameborder="0">
         </iframe>
       </div>
     </div>

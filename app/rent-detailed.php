@@ -1,6 +1,6 @@
 <?php include 'partials/header.php' ?>
 
-<main class="main">
+<main class="main-detailed">
   <div class="container">
     <div class="breadcrumbs__wrap">
       <ul class="breadcrumbs">
@@ -239,7 +239,7 @@
           </div>
         </div>
         <div class="info__block">
-          <div class="section__title"><h2>Транспортные услуги (заказ не менее, чем на 3 часа)</h2></div>
+          <div class="section__title"><h2>Транспортные услуги (заказ не&nbsp;менее, чем на&nbsp;3&nbsp;часа)</h2></div>
           <div class="info__cards">
             <ul class="info__card">
               <li class="info__card-row">

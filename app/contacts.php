@@ -60,15 +60,20 @@
       </div>
       <div id="map">
         <iframe
-            src="https://yandex.ru/map-widget/v1/?um=constructor%3A516129fdb77800fea95cf0e628781dcc26a022b33b94d71ff0346ebcf3730c01&amp;source=constructor"
-            width="100%"
-            height="100%"
-            frameborder="0">
+                src="https://yandex.ru/map-widget/v1/?um=constructor%3A516129fdb77800fea95cf0e628781dcc26a022b33b94d71ff0346ebcf3730c01&amp;source=constructor"
+                width="100%"
+                height="100%"
+                frameborder="0">
         </iframe>
       </div>
     </div>
   </div>
 </footer>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.js"
+        integrity="sha512-n/4gHW3atM3QqRcbCn6ewmpxcLAHGaDjpEBu4xZd47N0W2oQ+6q7oc3PXstrJYXcbNU1OHdQ1T7pAP+gi5Yu8g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="js/scripts.min.js"></script>
+<script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
 </body>
 </html>
 

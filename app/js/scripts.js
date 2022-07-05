@@ -41,14 +41,13 @@ $(document).ready(function () {
       320: {
         slidesPerView: 1,
       },
-      1280: {
+      1024: {
         slidesPerView: 2,
       }
     }
   });
 
   const rentSlider = new Swiper('.rent__slider', {
-    spaceBetween: 30,
     loop: true,
     watchSlidesProgress: true,
     slideVisibleClass: 'visible',
@@ -63,9 +62,15 @@ $(document).ready(function () {
     breakpoints: {
       320: {
         slidesPerView: 1,
+        spaceBetween: 20,
+      },
+      768: {
+        slidesPerView: 2,
+        spaceBetween: 20,
       },
       1280: {
         slidesPerView: 2,
+        spaceBetween: 30,
       }
     }
   });
@@ -86,7 +91,6 @@ $(document).ready(function () {
   });
 
   const aboutSlider = new Swiper('.about__slider',  {
-    spaceBetween: 30,
     loop: true,
     watchSlidesProgress: true,
     slideVisibleClass: 'visible',
@@ -100,9 +104,15 @@ $(document).ready(function () {
     breakpoints: {
       320: {
         slidesPerView: 1,
+        spaceBetween: 20,
+      },
+      768: {
+        slidesPerView: 2,
+        spaceBetween: 20,
       },
       1280: {
         slidesPerView: 2,
+        spaceBetween: 30,
       }
     }
   })
@@ -121,9 +131,15 @@ $(document).ready(function () {
     breakpoints: {
       320: {
         slidesPerView: 1,
+        spaceBetween: 20,
+      },
+      768: {
+        slidesPerView: 2,
+        spaceBetween: 20,
       },
       1280: {
         slidesPerView: 2,
+        spaceBetween: 30,
       }
     }
   })
@@ -145,4 +161,10 @@ $(document).ready(function () {
     let boxBottom = boxTop + box.outerHeight();
     return boxTop < viewportTop && viewportTop < boxBottom - el.outerHeight()
   }
+
+  $('.burger').on('click', function () {
+    $(this).toggleClass('active');
+    $('.header__nav').toggleClass('open')
+    $('body').toggleClass('fixed')
+  })
 });

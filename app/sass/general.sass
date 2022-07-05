@@ -25,6 +25,8 @@ body
   font: 400 16px/1.5 $manrope
   color: $black
   background: #f9f9f9
+  &.fixed
+    overflow-y: hidden
 
 *
   box-sizing: border-box
@@ -41,12 +43,25 @@ h1, h2, h3
 h1
   font: 700 36px/1.4 $manrope
   text-align: center
-
+  @include between(1024, 1280)
+    font-size: 30px
+  @include between(768, 1024)
+    font-size: 28px
+  @include max(767)
+    font-size: 23px
 h2
   font: 700 30px/1.5 $manrope
+  @include between(1024, 1280)
+    font-size: 26px
+  @include between(768, 1024)
+    font-size: 24px
+  @include max(767)
+    font-size: 22px
 
 h3
   font: 700 22px/1.5 $manrope
+  @include max(1023)
+    font-size: 20px
 
 p
   margin: 0
@@ -60,8 +75,12 @@ p
   margin: 0 auto
   width: 1230px
   padding: 0 15px
+  @include max(1279)
+    width: 100%
   &_small
     width: 1100px
+    @include max(1279)
+      width: 100%
   &_big
     width: 1370px
     @include max(1420)
@@ -100,6 +119,8 @@ li
 .section
   margin-top: 60px
   position: relative
+  @include max(767)
+    margin-top: 50px
   &__title
     margin-bottom: 40px
     display: flex
@@ -107,6 +128,9 @@ li
     justify-content: space-between
     gap: 1em
     width: 100%
+    flex-wrap: wrap
+    @include max(767)
+      margin-bottom: 30px
   &__link
     display: flex
     align-items: center
@@ -124,8 +148,10 @@ li
 ::selection
   background: $greenLight
 
-img::selection
-  background: transparent
+img
+  display: block
+  &::selection
+    background: transparent
 
 .img
   display: flex

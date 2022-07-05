@@ -13,6 +13,8 @@
         .about__slider-link
           bottom: 20px
           opacity: 1
+          @include max(767)
+            bottom: 15px
     &-link
       position: absolute
       padding: 8px 20px
@@ -21,17 +23,29 @@
       bottom: 0
       opacity: 0
       transition: all 0.3s ease
+      @include max(767)
+        border-radius: 20px
+        right: 15px
+        padding: 7px 16px
+        font-size: 14px
 .projects
   &__wrap
     display: grid
     grid-template-columns: repeat(2, 1fr)
     gap: 30px
+    @include max(1279)
+      gap: 20px
+    @include max(767)
+      grid-template-columns: 1fr
   &__block
     background: #fff
     padding: 32px 32px 93px
     position: relative
     box-shadow: 0 10px 30px rgba(41, 41, 42, 0.04)
     border-radius: 24px
+    @include max(1023)
+      padding: 20px 20px 90px
+      border-radius: 20px
 
     h3
       margin-bottom: 12px
@@ -47,6 +61,9 @@
     border-radius: 23px
     padding: 8px 20px
     transition: all 0.3s ease
+    @include max(1023)
+      left: 20px
+      bottom: 20px
     &:hover
       background: $green
 .cooperation
@@ -56,11 +73,18 @@
     display: grid
     grid-template-columns: 1fr 1fr
     grid-gap: 30px
+    @include max(1279)
+      grid-gap: 20px
+    @include max(767)
+      grid-template-columns: 1fr
   &__box
     background: #fff
     padding: 30px
     color: rgba(35, 35, 35, 0.7)
     border-radius: 24px
+    @include max(767)
+      padding: 20px
+      border-radius: 20px
   &__slider
     margin-top: 40px
     &-item
@@ -72,21 +96,36 @@
       grid-template-columns: repeat(3, 1fr)
       margin-top: 24px
       grid-gap: 30px
+      @include max(1279)
+        grid-gap: 20px
+      @include max(767)
+        grid-template-columns: 1fr
     &-block
       background: #fff
       padding: 30px
       color: rgba(35, 35, 35, 0.7)
       border-radius: 24px
+      @include max(1023)
+        padding: 20px
+        border-radius: 20px
 .external
   &__list
     background: $green
     border-radius: 24px
     padding: 30px 32px
+    @include max(767)
+      padding: 25px
   &__li
     &:not(:last-of-type)
       padding-bottom: 23px
       border-bottom: 1px solid rgba(255, 255, 255, 0.2)
       margin-bottom: 24px
+      @include between(1024, 1440)
+        padding-bottom: 19px
+        margin-bottom: 20px
+      @include max(1023)
+        padding-bottom: 14px
+        margin-bottom: 15px
   &__link
     font: 700 22px/1.5 $manrope
     color: #fff
@@ -95,6 +134,13 @@
     justify-content: space-between
     gap: 30px
     transition: opacity 0.3s ease
+    @include between(1024, 1440)
+      font-size: 20px
+    @include max(1023)
+      font-size: 18px
+    @include max(767)
+      gap: 15px
+      font-size: 16px
     &:hover, &:focus, &:visited
       opacity: 0.8
     &::after
@@ -103,3 +149,7 @@
       height: 28px
       display: flex
       background: url("../img/about/arrow.svg") center/contain no-repeat
+      flex-shrink: 0
+      @include max(767)
+        width: 24px
+        height: 24px

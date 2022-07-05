@@ -7,7 +7,7 @@
       Федеральной антимонопольной службы и практикующих экспертов
     </div>
     <section class="section edu">
-      <div class="section__title"><h2>Наши программы обучения</h2></div>
+      <div class="section__title edu__title"><h2>Наши программы обучения</h2></div>
       <div class="edu__wrap">
         <div class="edu__item goverment">
           <div class="edu__img"><img src="img/edu.png"
